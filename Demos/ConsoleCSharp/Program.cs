@@ -6,8 +6,19 @@ namespace ConsoleCSharp
 	{
 		static void Main(string[] args)
 		{
-			// the canonical sample code for a new program! (HELLO WORLD)
-			Console.WriteLine("Hello World!");
+		// a great programming typeface (font)
+		// has clean letter shapes, distinguishable punctuation ; : < > . ,
+		// and ensures that similar charactors are easy to tell apart
+		// The letter l, versus the number 1
+		// The letter o, versus the number 0
+		// Curly braces { } versus parenthesis ( )
+
+		// most developer prefer monospace fonts
+		// find a definitive list of them at
+		// https://github.com/chrissimpkins/codeface
+
+		// try Fira code from
+		// https://github.com/tonsky/
 		}
 	}
 
