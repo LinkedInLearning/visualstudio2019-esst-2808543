@@ -14,6 +14,9 @@ namespace ConsoleCSharp
 			// use the Quick Action (Light Bulb)
 
 			var result = Math.Pow(8, 3); // return the cube of 8.
+
+			// var cust = new customer ();
+			// var serializer = new JsonSerializer();
 		}
 
 		
