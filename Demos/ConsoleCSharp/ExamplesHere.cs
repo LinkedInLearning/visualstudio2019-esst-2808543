@@ -6,26 +6,27 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		// classes contain data and code
-		public string Title { get; set; }
-		public decimal Price { get; set; }
 
+		private long _sharedNumber;
 		public void ExampleMethod()
 		{
-			// comments 
+			long xFactor = 6;
+			long yFactor = 123456789012345;
+			double zFactor = 5.66;
+			decimal qFactor = 5.66M;
 
-			// matching braces
-			if (true)
-			{
-				for (int i = 0; i < 3; i++)
-				{
-					switch (i)
-					{
-						default:
-							break;
-					}
-				}
-			}
+			double total = AddNumbers(xFactor, yFactor);
+
+			Console.WriteLine(zFactor);
+			Console.WriteLine(qFactor);
+			Console.WriteLine(total);
+		}
+
+		private long AddNumbers(long firstValue, long secondValue)
+		{
+			long total = firstValue + secondValue;
+			_sharedNumber = firstValue;
+			return total;
 		}
 	}
 }
