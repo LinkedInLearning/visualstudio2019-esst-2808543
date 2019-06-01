@@ -6,26 +6,41 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		// classes contain data and code
-		public string Title { get; set; }
-		public decimal Price { get; set; }
+		
 
 		public void ExampleMethod()
 		{
-			// comments 
+			// Show ListMembers
+			// AKA Auto Complete
+			// Ctrl-J
 
-			// matching braces
-			if (true)
+
+
+			// Finish auto-complete with
+			// Mouse, Tab, Spacebar, Parenthesis, Semicolon
+
+
+
+			// Fix issues with code with Ctrl-Spacebar
+			// AKA CompleteWord
+
+			var currentBook = new Book
 			{
-				for (int i = 0; i < 3; i++)
-				{
-					switch (i)
-					{
-						default:
-							break;
-					}
-				}
-			}
+				Title = "Hiking the hills...",
+				Price = 29.95M
+			};
+
+
+			// Use Parameter Info to show information
+			// Ctrl-Shift-Spacebar
+
+
+			Console.Writine(currentBook.Title);
+			currentBook.SaveBook();
+
+
+
+
 		}
 	}
 }
