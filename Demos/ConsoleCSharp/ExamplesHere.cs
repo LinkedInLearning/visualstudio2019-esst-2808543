@@ -35,10 +35,10 @@ namespace ConsoleCSharp
 			// Ctrl-Shift-Spacebar
 
 
-			Console.Writine(currentBook.Title);
+			Console.WriteLine(currentBook.Title);
 			currentBook.SaveBook();
 
-
+			
 
 
 		}
