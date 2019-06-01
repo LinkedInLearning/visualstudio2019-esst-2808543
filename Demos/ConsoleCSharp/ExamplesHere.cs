@@ -6,13 +6,16 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		// classes contain data and code
-		public string Title { get; set; }
-		public decimal Price { get; set; }
 
+	
 		public void ExampleMethod()
 		{
 			// comments 
+			var book = new Book();
+			book.Genre = Genre.Travel;
+			book.Title = "Hiking the highroads in the Himalayas";
+			book.Info.PageCount = 78;
+			book.Info.Style = BookStyle.Paperback;
 
 			// matching braces
 			if (true)

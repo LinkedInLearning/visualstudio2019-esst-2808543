@@ -9,8 +9,10 @@ namespace ConsoleCSharp
     // classes contain data and code
     public string Title { get; set; }
     public decimal Price { get; set; }
+		public Genre Genre { get; set; }
+		public BookInfo Info { get; set; }
 
-    public long GetWordCount() {
+		public long GetWordCount() {
             // comments 
             return 42;
     }
@@ -20,11 +22,32 @@ namespace ConsoleCSharp
     }
   }
 
-  public struct FileInformation {
+  public class BookInfo {
     // structs are primarily for data stores
-    public string FileName { get; set; }
-    public string Size { get; set; }
+    public int PageCount { get; set; }
+    public BookStyle Style { get; set; }
 
     public event EventHandler<EventArgs> SizeChanged;
   }
+
+
+	public enum BookStyle
+	{
+		Paperback,
+		Hardcover,
+		eBook
+
+	}
+	public enum Genre
+	{
+		None = 0,
+		Cooking,
+		Science,
+		Biographies,
+		History,
+		Art,
+		Reference,
+		Travel
+
+	}
 }
