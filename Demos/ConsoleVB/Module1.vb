@@ -1,7 +1,8 @@
 ﻿Module Module1
 
 	Sub Main()
-
+		Dim bookName As String
+		bookName = "Tours for our cosmic dimension."
 	End Sub
 
 
