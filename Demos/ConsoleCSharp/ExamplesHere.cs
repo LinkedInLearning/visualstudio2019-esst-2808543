@@ -15,7 +15,7 @@ namespace ConsoleCSharp
 
 			var result = Math.Pow(8, 3); // return the cube of 8.
 
-			// var cust = new customer ();
+			// var cust = new Customer ();
 			// var serializer = new JsonSerializer();
 		}
 
