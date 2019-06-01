@@ -6,11 +6,9 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		// classes contain data and code
-		public string Title { get; set; }
-		public decimal Price { get; set; }
 
-		public void ExampleMethod()
+
+		public void ShowLoopCode()
 		{
 			// comments 
 
