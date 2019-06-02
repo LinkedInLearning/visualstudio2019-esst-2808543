@@ -6,37 +6,15 @@ namespace ConsoleCSharp
 	class ExamplesHere
 	{
 		private int bookCount;
+		private decimal RoyaltyPayment;
 
 		public void UseFormatDocument()
 		{
-			var bookList = new List<string>();
-			List<string> authorList = new List<string>();
 
-			bool isPremiumCustomer = true;
-
-			// with braces
-			if (isPremiumCustomer)
-			{
-				Console.WriteLine("true");
-			}
-			else
-			{
-				Console.WriteLine("false");
-			}
-
-			// without braces
-			if (isPremiumCustomer)
-				Console.WriteLine("true");
-			else
-				Console.WriteLine("false");
-
-
+			bookCount = 33;
+			RoyaltyPayment = 1565M;
 		}
 
-		public void DefaultCSharpRules()
-		{
-
-
-		}
+		
 	}
 }
