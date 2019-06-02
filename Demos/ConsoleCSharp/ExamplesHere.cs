@@ -15,6 +15,6 @@ namespace ConsoleCSharp
 
 			// use the Ctrl-K, Ctrl-X combo to see the big list of snippets
 
-
 		}
 	}
+}
