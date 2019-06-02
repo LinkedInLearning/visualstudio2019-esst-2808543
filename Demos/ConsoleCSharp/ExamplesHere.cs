@@ -5,7 +5,6 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		private int bookCount;
 
 		public void UseFormatDocument()
 		{
@@ -33,10 +32,6 @@ namespace ConsoleCSharp
 
 		}
 
-		public void DefaultCSharpRules()
-		{
 
-
-		}
 	}
 }
