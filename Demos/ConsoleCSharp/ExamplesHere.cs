@@ -13,23 +13,6 @@ namespace ConsoleCSharp
 		public void ExampleMethod()
 		{
 
-			var b = new Book();
-			var book = new Book();
-			book.Genre = Genre.Travel;
-			book.Title = "Hiking the highroads in the Himalayas";
-			book.Info.PageCount = 78;
-			book.Info.Style = BookStyle.Paperback;
-
-
-			string filePath = "C:\\demo.txt";
-
-			// refactor the method name
-
-			b.SaveBook(filePath, true, DateTime.Now);
-
-			var b2 = new Book();
-			b2.SaveBook(@"D:\otherfile.txt", false, DateTime.Now);
-
 			// refactor the variable name
 			// refactor the method name
 			// explicit variable
