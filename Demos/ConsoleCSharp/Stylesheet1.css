@@ -9,3 +9,9 @@
 		@media
 
 	*/
+
+@font-face {
+	font-family: 'font name';
+	src: url('/content/file.eot');
+	src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');
+}
