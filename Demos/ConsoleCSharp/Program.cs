@@ -8,6 +8,7 @@ namespace ConsoleCSharp
 		{
 			// the canonical sample code for a new program! (HELLO WORLD)
 			Console.WriteLine("Hello World!");
+			Console.WriteLine(args[0]);
 		}
 	}
 

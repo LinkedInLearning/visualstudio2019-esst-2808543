@@ -13,6 +13,8 @@ namespace ConsoleCSharp
 
 			bookCount = 33;
 			RoyaltyPayment = 1565M;
+			Console.WriteLine(bookCount);
+			Console.WriteLine(RoyaltyPayment);
 		}
 
 		
