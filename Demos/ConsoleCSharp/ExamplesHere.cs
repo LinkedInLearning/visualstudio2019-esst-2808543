@@ -20,12 +20,12 @@ namespace ConsoleCSharp
 			// reorder parameters
 			var p = new PaintLib.Calc();
 
-			var litersProject1 = p.RectanglePaintLiters(coverageRatio: .85, width: 300, height: 140);
+			var litersProject1 = p.RectangleLiters(coverageRatio: .85, width: 300, height: 140);
 			var litersProject2 = p.EllipsePaintLiters(coverageRatio: .85,
 																										majorAxisLength: 120,
 																										minorAxisLength: 90);
 			//
-			var litersProject3 = p.CirlePaintLiters(radius: 230, coverageRatio: .85);
+			var litersProject3 = p.CircleLiters(coverageRatio: .85, radius: 230);
 			
 			var total = litersProject1 + litersProject2 + litersProject3;
 			Console.WriteLine(total);

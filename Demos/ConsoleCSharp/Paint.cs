@@ -9,23 +9,27 @@ namespace ConsoleCSharp.PaintLib
 	{
 		// For real project use  Math.PI 
 		// refactor constant for PI
-		const double areaperratio = 750;
+		const double AREA_PER_RATIO = 750;
+		private const double PI = 3.141592;
 
-		public double RectanglePaintLiters(double coverageRatio, double width, double height)
+		public double RectangleLiters(double coverageRatio, double width, double height)
 		{
 			var area = width * height;
-			return (area / areaperratio) * coverageRatio;
+			return (area / AREA_PER_RATIO) * coverageRatio;
 		}
 		public double EllipsePaintLiters(double coverageRatio, double majorAxisLength, double minorAxisLength)
 		{
-			var area = 3.141592 * (majorAxisLength * minorAxisLength);
-			return (area / areaperratio) * coverageRatio;
+			var area = PI * (majorAxisLength * minorAxisLength);
+			return (area / AREA_PER_RATIO) * coverageRatio;
 		}
 
-		public double CirlePaintLiters(double radius, double coverageRatio)
-		{
-			var area = 3.141592 * (radius * radius);
-			return (area / areaperratio) * coverageRatio;
+		public double CircleLiters(double coverageRatio, double radius) {
+			var area = GetArea(radius);
+			return (area / AREA_PER_RATIO) * coverageRatio;
+		}
+
+		private static double GetArea(double radius) {
+			return PI * (radius * radius);
 		}
 	}
 
