@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactor", "Refactor", "{A3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCSharp", "ConsoleCSharp\ConsoleCSharp.csproj", "{27830D51-1CA0-4D59-AC13-B20E4D56B17C}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConsoleVB", "ConsoleVB\ConsoleVB.vbproj", "{E0E42B79-012C-437B-B32B-8C4229E5FB08}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,10 +17,6 @@ Global
 		{27830D51-1CA0-4D59-AC13-B20E4D56B17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27830D51-1CA0-4D59-AC13-B20E4D56B17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27830D51-1CA0-4D59-AC13-B20E4D56B17C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0E42B79-012C-437B-B32B-8C4229E5FB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0E42B79-012C-437B-B32B-8C4229E5FB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0E42B79-012C-437B-B32B-8C4229E5FB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0E42B79-012C-437B-B32B-8C4229E5FB08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
