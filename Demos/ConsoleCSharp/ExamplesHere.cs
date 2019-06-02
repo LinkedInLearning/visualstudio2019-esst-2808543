@@ -5,16 +5,16 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		private int bookCount;
-		private decimal RoyaltyPayment;
+		private int _bookCount;
+		private decimal _royaltyPayment;
 
 		public void UseFormatDocument()
 		{
 
-			bookCount = 33;
-			RoyaltyPayment = 1565M;
-			Console.WriteLine(bookCount);
-			Console.WriteLine(RoyaltyPayment);
+			_bookCount = 33;
+			_royaltyPayment = 1565M;
+			Console.WriteLine(_bookCount);
+			Console.WriteLine(_royaltyPayment);
 		}
 
 		

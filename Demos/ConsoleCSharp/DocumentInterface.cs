@@ -4,14 +4,14 @@ using System.Text;
 
 namespace ConsoleCSharp
 {
-	interface Document
+	interface IDocument
 	{
 
 		string Title { get; set; }
 		string Publisher { get; set; }
 	}
 
-	public class Book : Document
+	public class Book : IDocument
 	{
 		
 		public string Title { get; set; }
