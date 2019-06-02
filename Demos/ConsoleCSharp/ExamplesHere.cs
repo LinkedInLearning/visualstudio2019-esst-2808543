@@ -6,14 +6,24 @@ namespace ConsoleCSharp
 {
 	class ExamplesHere
 	{
-		// classes contain data and code
-		public string Title { get; set; }
-		public decimal Price { get; set; }
 
-		public void ExampleMethod()
+
+		public void UseFormatDocument()
+		{
+			// force formatting 
+			int total=       0;
+			int attendeeCount = 4;
+														int result;
+			for (int i = 0; i < 20; i++)
+			{
+				total += i;
+			}
+			result				 = attendeeCount *				total;
+		}
+
+		public void DefaultCSharpRules()
 		{
 
-			// use the Ctrl-K, Ctrl-X combo to see the big list of snippets
 
 		}
 	}
