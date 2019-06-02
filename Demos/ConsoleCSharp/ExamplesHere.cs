@@ -9,9 +9,11 @@ namespace ConsoleCSharp
 		public void UseFormatDocument()
 		{
 			var bookList = new List<string>();
-			List<string> authorList = new List<string>();
+			var authorList = new List<string>();
 
-			bool isPremiumCustomer = true;
+			bookList.Add("Hiking the hills");
+			authorList.Add("Walt Ritscher");
+			var isPremiumCustomer = true;
 
 			// with braces
 			if (isPremiumCustomer)
@@ -25,11 +27,13 @@ namespace ConsoleCSharp
 
 			// without braces
 			if (isPremiumCustomer)
+			{
 				Console.WriteLine("true");
+			}
 			else
+			{
 				Console.WriteLine("false");
-
-
+			}
 		}
 
 
