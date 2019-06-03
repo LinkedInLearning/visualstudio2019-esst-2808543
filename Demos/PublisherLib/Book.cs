@@ -13,7 +13,7 @@ namespace PublisherLib {
 
 		const Decimal MAX_PRICE = 120;
 
-    internal void UpdatePrice(int BookID, decimal newPrice) {
+    public void UpdatePrice( decimal newPrice) {
       if (newPrice < 0)
       {
         Price = newPrice;
@@ -41,7 +41,7 @@ namespace PublisherLib {
 
 
     }
-    private decimal CalculateBuyerDiscount(decimal currentPrice, BuyerType buyerType) {
+    public decimal CalculateBuyerDiscount(decimal currentPrice, BuyerType buyerType) {
 
       switch (buyerType)
       {

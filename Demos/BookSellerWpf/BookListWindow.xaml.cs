@@ -29,5 +29,11 @@ namespace BookSellerWpf
 			var books = dataSource.GetAllBooks().OrderBy(x => x.Title);
 			this.DataContext = books;
 		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			var book = BooksListBox.SelectedItem as Book;
+			book.UpdatePrice(22.50M);
+		}
 	}
 }

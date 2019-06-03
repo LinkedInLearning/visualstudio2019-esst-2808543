@@ -7,8 +7,9 @@
 				mc:Ignorable="d"
 				Title="BookListWindow"
 				FontSize='14'>
-	<Grid>
-		<ListBox ItemsSource="{Binding}">
+	<StackPanel>
+		<ListBox x:Name='BooksListBox'
+						 ItemsSource="{Binding}">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<StackPanel>
@@ -60,5 +61,7 @@
 			</ListBox.ItemTemplate>
 
 		</ListBox>
-	</Grid>
+		<Button Content='Update Price'
+						Click='Button_Click'></Button>
+	</StackPanel>
 </Window>
