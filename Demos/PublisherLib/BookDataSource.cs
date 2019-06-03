@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
-namespace PublisherLib
+namespace PublisherLib.Data
 {
 	public class BookDataSource
 	{

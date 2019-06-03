@@ -11,7 +11,7 @@ namespace BookSellerConsole
 		static void Main(string[] args)
 		{
 
-			var dataSource = new PublisherLib.BookDataSource();
+			var dataSource = new PublisherLib.Data.BookDataSource();
 			PublisherLib.Book book = dataSource.GetBestSellingBook();
 			Console.WriteLine($"Title: {book.Title}, Copies Sold:{book.CopiesSold}");
 		}

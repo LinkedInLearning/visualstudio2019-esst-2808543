@@ -25,7 +25,7 @@ namespace BookSellerWpf
 		{
 			InitializeComponent();
 
-			var dataSource = new PublisherLib.BookDataSource();
+			var dataSource = new PublisherLib.Data.BookDataSource();
 			var books = dataSource.GetAllBooks().OrderBy(x => x.Title);
 			this.DataContext = books;
 		}
