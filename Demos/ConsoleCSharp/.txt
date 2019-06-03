@@ -13,4 +13,5 @@ tab_width = 6
 ; Visual studio extends the native setting
 ; for Code Style rules
 
-csharp_new_line_before_open_brace = methods
+csharp_new_line_before_open_brace = methods, 
+;csharp_new_line_before_open_brace =  types, methods, control_blocks, lambdas, local_functions
