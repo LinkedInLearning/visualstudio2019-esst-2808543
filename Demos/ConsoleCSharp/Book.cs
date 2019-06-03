@@ -11,6 +11,8 @@ namespace NavigatingCSharp
 		public string Author { get; set; }
 		public string ISBN { get; set; }
 		public decimal RoyaltyPercent { get; set; }
+		public BookGenre Genre { get; set; }
+		public BookInfo Info { get; set; }
 
 		const Decimal MAX_PRICE = 120;
 		private decimal _price;
@@ -46,6 +48,34 @@ namespace NavigatingCSharp
 				return currentPrice;
 			}
 
+
+		}
+		public class BookInfo
+		{
+			// structs are primarily for data stores
+			public int PageCount { get; set; }
+			public BookStyle Style { get; set; }
+
+			public event EventHandler<EventArgs> SizeChanged;
+		}
+
+		public enum BookStyle
+		{
+			Paperback,
+			Hardcover,
+			eBook
+
+		}
+		public enum BookGenre
+		{
+			None = 0,
+			Cooking,
+			Science,
+			Biographies,
+			History,
+			Art,
+			Reference,
+			Travel
 
 		}
 	}
