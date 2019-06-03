@@ -1,0 +1,16 @@
+﻿;Top-most EditorConfig file.
+; native .editorconfig settings
+root = true
+
+; Tab Indent
+[*.cs]
+indent_style = Tab
+
+indent_size = 6
+tab_width = 6
+
+
+; Visual studio extends the native setting
+; for Code Style rules
+
+csharp_new_line_before_open_brace = methods
