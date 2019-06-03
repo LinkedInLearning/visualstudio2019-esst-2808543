@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Information is this file is for training scenarios and is not actual book information. Any resemblance to actual persons, living or dead is purely coincidental. -->
+<Books>
+	<Book>
+		<Title>Secrets of the .NET runtime</Title>
+		<PublicationDate>2018-11-03</PublicationDate>
+		<Price>34.95</Price>
+		<CopiesSold>689</CopiesSold>
+		<Author>
+			<FirstName>Terry</FirstName>
+			<LastName>Dactill</LastName>
+		</Author>
+	</Book>
+
+	<Book>
+		<Title>Ten proven techniques to improve your C# code</Title>
+		<PublicationDate>2019-02-15</PublicationDate>
+		<Price>15.50</Price>
+		<CopiesSold>275</CopiesSold>
+		<Author>
+			<FirstName>Tadd</FirstName>
+			<LastName>Pouhl</LastName>
+		</Author>
+	</Book>
+	<Book>
+		<Title>Visual Studio: Hidden Treasures</Title>
+		<PublicationDate>2019-06-22</PublicationDate>
+		<Price>15.50</Price>
+		<CopiesSold>118</CopiesSold>
+		<Author>
+			<FirstName>Moa</FirstName>
+			<LastName>Skito</LastName>
+		</Author>
+	</Book>
+</Books>

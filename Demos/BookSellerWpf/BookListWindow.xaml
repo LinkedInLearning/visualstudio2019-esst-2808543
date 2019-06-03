@@ -1,0 +1,64 @@
+﻿<Window x:Class="BookSellerWpf.BookListWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:BookSellerWpf"
+				mc:Ignorable="d"
+				Title="BookListWindow"
+				FontSize='14'>
+	<Grid>
+		<ListBox ItemsSource="{Binding}">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<TextBlock Text="{Binding Title}"
+											 FontSize="22" />
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto" />
+								<ColumnDefinition Width="*" />
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition />
+								<RowDefinition />
+								<RowDefinition />
+								<RowDefinition />
+							</Grid.RowDefinitions>
+							<TextBlock Text='Author Name:'
+												 FontWeight='Bold' />
+							<TextBlock Text='{Binding Author.FullName}'
+												 Grid.Column='1'
+												 Padding='10,0,0,0' />
+
+							<TextBlock Text='Price:'
+												 Grid.Row='1'
+												 FontWeight='Bold' />
+							<TextBlock Text='{Binding Price}'
+												 Grid.Column='1'
+												 Grid.Row='1'
+												 Padding='10,0,0,0' />
+
+							<TextBlock Text='Copies Sold:'
+												 Grid.Row='2'
+												 FontWeight='Bold' />
+							<TextBlock Text='{Binding CopiesSold}'
+												 Grid.Column='1'
+												 Grid.Row='2'
+												 Padding='10,0,0,0' />
+
+							<TextBlock Text='Publication Date:'
+												 Grid.Row='3'
+												 FontWeight='Bold' />
+							<TextBlock Text='{Binding PublicationDate,StringFormat={}{0:yyyy-MM-dd}}'
+												 Grid.Column='1'
+												 Grid.Row='3'
+												 Padding='10,0,0,0' />
+						</Grid>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+
+		</ListBox>
+	</Grid>
+</Window>
