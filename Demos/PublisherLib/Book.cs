@@ -25,8 +25,6 @@ namespace PublisherLib {
     }
     private decimal CapPriceAtMaximum(decimal currentPrice) {
 
-
-
       // use the private field
       Price = 100M;
 
@@ -38,8 +36,6 @@ namespace PublisherLib {
       {
         return currentPrice;
       }
-
-
     }
     public decimal CalculateBuyerDiscount(decimal currentPrice, BuyerType buyerType) {
 
@@ -63,7 +59,6 @@ namespace PublisherLib {
       return currentPrice;
     }
   }
-
   public enum BuyerType {
     Retail,
     Wholesale,
