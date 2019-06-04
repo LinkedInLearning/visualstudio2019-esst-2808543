@@ -25,27 +25,27 @@ namespace DebugWpf
 			InitializeComponent();
 		}
 
-		private void SimpleButton_Click(object sender, RoutedEventArgs e)
+		private void steppingButton_Click(object sender, RoutedEventArgs e)
 		{
-			string computerName;
-			computerName = "Webserver14";
-			var outputText = "The current computer name is " + computerName;
-			outputTextblock.Text = outputText;
-		}
+			decimal monthlyPayment;
+			decimal rate = 5.6M;
 
-		private void BreakButton_Click(object sender, RoutedEventArgs e)
-		{
+			// step into
+			monthlyPayment = Financial.CalculateMonthlyPayment(numberOfMonths: 12,
+																												 loanRate: rate,
+																												 loanAmount: 1200);
+
+			// step over
+			monthlyPayment = Financial.CalculateMonthlyPayment(numberOfMonths: 24,
+																									 loanRate: rate,
+																									 loanAmount: 2365);
 
 
-			double x;
-			x = 6;
-			double y = 7;
-			// breakpoints cannot be set on comments
-			// or other non-runnable lines
-			string result;
-			double fraction = x / 5;
-			result = String.Format("Your answer is {0}", fraction);
-			outputTextblock.Text = result;
+			// step out;
+			monthlyPayment = Financial.CalculateMonthlyPayment(numberOfMonths: 36,
+																								 loanRate: rate,
+																								 loanAmount: 3700);
+
 		}
 	}
 }
