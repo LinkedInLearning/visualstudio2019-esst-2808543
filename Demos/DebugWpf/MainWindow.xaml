@@ -11,24 +11,26 @@
 	<StackPanel Margin='20'
 							HorizontalAlignment='Center'
 							Width='400'>
-		<Button Content='Simple Breakpoint'
+		<Button Content='Get Sample Name'
 						Height='36'
 						Margin='5'
 						HorizontalAlignment='Center'
-						Name='SimpleButton'
+						Name='GetNameButton'
 						VerticalAlignment='Top'
 						MinWidth='180'
-						Click='SimpleButton_Click' />
-		<Button Content='Another Breakpoint'
+						Click='GetNameButton_Click' />
+		<Button Content='Get All Names'
 						Height='36'
 						Margin='5'
 						HorizontalAlignment='Center'
-						Name='BreakButton'
+						Name='AllNamesButton'
 						VerticalAlignment='Top'
 						MinWidth='180'
-						Click='BreakButton_Click' />
+						Click='AllNamesButton_Click' />
 		<TextBlock x:Name='outputTextblock'
 							 HorizontalAlignment='Center' />
+		<ListBox x:Name='AllNamesListBox' />
 	</StackPanel>
 </Window>
+
   

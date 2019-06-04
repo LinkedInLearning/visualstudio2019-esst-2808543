@@ -24,28 +24,27 @@ namespace DebugWpf
 		{
 			InitializeComponent();
 		}
-
-		private void SimpleButton_Click(object sender, RoutedEventArgs e)
+		private void GetNameButton_Click(object sender, RoutedEventArgs e)
 		{
-			string computerName;
-			computerName = "Webserver14";
-			var outputText = "The current computer name is " + computerName;
-			outputTextblock.Text = outputText;
+			var gen = new RobotNameGenerator.NameGenerator();
+			var roboName = gen.GetRobotName();
+
+			outputTextblock.Text = roboName;
 		}
 
-		private void BreakButton_Click(object sender, RoutedEventArgs e)
+		public const int NAME_COUNT = 8;
+
+		private void AllNamesButton_Click(object sender, RoutedEventArgs e)
 		{
+			var gen = new RobotNameGenerator.NameGenerator();
+			var allNames = gen.GetRobotNames(16);
 
+			AllNamesListBox.ItemsSource = allNames;
 
-			double x;
-			x = 6;
-			double y = 7;
-			// breakpoints cannot be set on comments
-			// or other non-runnable lines
-			string result;
-			double fraction = x / 5;
-			result = String.Format("Your answer is {0}", fraction);
-			outputTextblock.Text = result;
+			//foreach (var item in allNames)
+			//{
+			//	AllNamesListBox.Items.Add(item);
+			//}
 		}
 	}
 }
