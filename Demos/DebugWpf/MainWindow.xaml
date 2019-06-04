@@ -8,27 +8,17 @@
 				Title="MainWindow"
 				Width="525"
 				FontSize='18'>
-	<StackPanel Margin='20'
-							HorizontalAlignment='Center'
-							Width='400'>
-		<Button Content='Simple Breakpoint'
+	<StackPanel>
+		<Button Content='DataTips'
 						Height='36'
-						Margin='5'
 						HorizontalAlignment='Center'
-						Name='SimpleButton'
+						Margin='20'
+						Name='dataTipsButton'
 						VerticalAlignment='Top'
-						MinWidth='180'
-						Click='SimpleButton_Click' />
-		<Button Content='Another Breakpoint'
-						Height='36'
-						Margin='5'
-						HorizontalAlignment='Center'
-						Name='BreakButton'
-						VerticalAlignment='Top'
-						MinWidth='180'
-						Click='BreakButton_Click' />
-		<TextBlock x:Name='outputTextblock'
-							 HorizontalAlignment='Center' />
+						Width='152'
+						Click='dataTipsButton_Click' />
+		<TextBlock Margin='20'
+							 x:Name='messageTextBlock' />
 	</StackPanel>
 </Window>
   

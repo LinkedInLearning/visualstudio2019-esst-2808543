@@ -24,28 +24,51 @@ namespace DebugWpf
 		{
 			InitializeComponent();
 		}
-
-		private void SimpleButton_Click(object sender, RoutedEventArgs e)
+		private void dataTipsButton_Click(object sender, RoutedEventArgs e)
 		{
-			string computerName;
-			computerName = "Webserver14";
-			var outputText = "The current computer name is " + computerName;
-			outputTextblock.Text = outputText;
+			ExampleMethod();
+
 		}
 
-		private void BreakButton_Click(object sender, RoutedEventArgs e)
+		private void ExampleMethod()
 		{
+			// another way to add a breakpoint within code
+			if (System.Diagnostics.Debugger.IsAttached)
+			{
+				System.Diagnostics.Debugger.Break();
+			}
+			
+			// C# primitive variable type (float, double, short, int, long etc..)
+
+			string sentence = "One word after another.";
+			double taxRate = 7.8;
 
 
-			double x;
-			x = 6;
-			double y = 7;
-			// breakpoints cannot be set on comments
-			// or other non-runnable lines
-			string result;
-			double fraction = x / 5;
-			result = String.Format("Your answer is {0}", fraction);
-			outputTextblock.Text = result;
+			// types with more properties
+			var tour = new Tour { TourName = "City bikes", Location = "Portland" };
+			var birthDate = DateTime.Parse("5/5/1992");
+
+
+			var sortedNames = new SortedDictionary<string, int>();
+			sortedNames.Add("Henry", 45);
+			sortedNames.Add("Betsy", 23);
+			sortedNames.Add("Wayne", 62);
+			sortedNames.Add("Freddie", 38);
+			sortedNames.Add("Martin", 55);
+			sortedNames.Add("Ralph", 28);
+
+			#region Message
+			messageTextBlock.Text = sentence;
+			messageTextBlock.Text = taxRate.ToString();
+
+			#endregion
 		}
+
+	}
+
+	public class Tour
+	{
+		public string TourName { get; set; }
+		public string Location { get; set; }
 	}
 }
