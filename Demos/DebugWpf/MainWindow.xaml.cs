@@ -24,5 +24,28 @@ namespace DebugWpf
 		{
 			InitializeComponent();
 		}
+
+		private void SimpleButton_Click(object sender, RoutedEventArgs e)
+		{
+			string computerName;
+			computerName = "Webserver14";
+			var outputText = "The current computer name is " + computerName;
+			outputTextblock.Text = outputText;
+		}
+
+		private void BreakButton_Click(object sender, RoutedEventArgs e)
+		{
+
+
+			double x;
+			x = 6;
+			double y = 7;
+			// breakpoints cannot be set on comments
+			// or other non-runnable lines
+			string result;
+			double fraction = x / 5;
+			result = String.Format("Your answer is {0}", fraction);
+			outputTextblock.Text = result;
+		}
 	}
 }
