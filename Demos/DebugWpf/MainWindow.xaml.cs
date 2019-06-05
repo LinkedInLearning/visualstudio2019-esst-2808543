@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace DebugWpf
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logicc for MainWindow.xaml
 	/// </summary>
 	public partial class MainWindow : Window
 	{
@@ -24,24 +24,20 @@ namespace DebugWpf
 		{
 			InitializeComponent();
 		}
-		private void GetNameButton_Click(object sender, RoutedEventArgs e)
+		private async void Button_Click(object sender, RoutedEventArgs e)
 		{
-			var gen = new RobotNameGenerator.NameGenerator();
-			var roboName = gen.GetRobotName();
+			FastProgressBar.IsIndeterminate = true;
+			SlowProgressBar.IsIndeterminate = true;
+			var nameGen = new RobotNameGenerator.NameGenerator();
 
-			outputTextblock.Text = roboName;
-		}
-
-		public const int NAME_COUNT = 8;
-
-		private void AllNamesButton_Click(object sender, RoutedEventArgs e)
-		{
-			var gen = new RobotNameGenerator.NameGenerator();
-			var allNames = gen.GetRobotNames(12);
-
-			AllNamesListBox.ItemsSource = allNames;
+			var roboNames = await nameGen.GetRobotNames(12);
+			FastListBox.ItemsSource = roboNames;
+			FastProgressBar.IsIndeterminate = false;
+			var slowNames = await nameGen.GetRobotNamesSlow(12);
 
 			
+			SlowListBox.ItemsSource = slowNames;
+			SlowProgressBar.IsIndeterminate = false;
 		}
 	}
 }

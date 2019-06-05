@@ -1,35 +1,54 @@
 ﻿<Window x:Class="DebugWpf.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DebugWpf"
-        mc:Ignorable="d"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:DebugWpf"
+				mc:Ignorable="d"
 				Title="MainWindow"
-				Width="525"
-				FontSize='18'>
-	<StackPanel Margin='20,50'
-							HorizontalAlignment='Center'
-							Width='400'>
-		<Button Content='Get Sample Name'
-						Height='36'
-						Margin='5'
-						HorizontalAlignment='Center'
-						Name='GetNameButton'
-						VerticalAlignment='Top'
-						MinWidth='180'
-						Click='GetNameButton_Click' />
-		<Button Content='Get All Names'
-						Height='36'
-						Margin='5'
-						HorizontalAlignment='Center'
-						Name='AllNamesButton'
-						VerticalAlignment='Top'
-						MinWidth='180'
-						Click='AllNamesButton_Click' />
-		<TextBlock x:Name='outputTextblock'
-							 HorizontalAlignment='Center' />
-		<ListBox x:Name='AllNamesListBox' />
+				Width="700"
+				FontSize='14'>
+	<StackPanel Margin='80,20'
+							HorizontalAlignment='Stretch'>
+		<Button Content='Start Demo'
+						Click='Button_Click' />
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width='58*' />
+				<ColumnDefinition Width='61*' />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<ListBox x:Name='FastListBox'
+							 Margin='20'
+							 MinHeight='120'>
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text='{Binding}' />
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<ProgressBar x:Name='FastProgressBar'
+									 Grid.Row='1'
+									 Margin='20,0' />
+			<ListBox x:Name='SlowListBox'
+							 Margin='20'
+							 MinHeight='120'
+							 Grid.Column='1'>
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text='{Binding }' />
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<ProgressBar x:Name='SlowProgressBar'
+									 Grid.Row='1'
+									 Grid.Column='1'
+									 MinHeight='20'
+									 Margin='20,0' />
+		</Grid>
 	</StackPanel>
 </Window>
 
