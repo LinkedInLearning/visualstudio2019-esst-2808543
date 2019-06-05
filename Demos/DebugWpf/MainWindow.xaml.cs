@@ -36,7 +36,6 @@ namespace DebugWpf
 		private void BreakButton_Click(object sender, RoutedEventArgs e)
 		{
 
-
 			double x;
 			x = 6;
 			double y = 7;
