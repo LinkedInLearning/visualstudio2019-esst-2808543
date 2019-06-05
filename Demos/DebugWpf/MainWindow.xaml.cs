@@ -23,29 +23,48 @@ namespace DebugWpf
 		public MainWindow()
 		{
 			InitializeComponent();
+			List<ColorSample> colors = new List<ColorSample>();
+			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Blue), ColorName = "Blue" });
+			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Orange), ColorName = "Orange" });
+			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Yellow), ColorName = "Yellow" });
+			this.DataContext = colors;
+			this.Loaded += MainWindow_Loaded;
+		}
+		void MainWindow_Loaded(object sender, RoutedEventArgs e)
+		{
+			ColorsListBox.SelectedIndex = 0;
+		}
+		private void ConditionalButton_Click(object sender, RoutedEventArgs e)
+		{
+			var currentColor = ColorsListBox.SelectedItem as ColorSample;
+			ellipse1.Fill = currentColor.ColorBrush;
+		}
+		private async void HitCountButton_Click(object sender, RoutedEventArgs e)
+		{
+			progressTextBlock.Text = string.Empty;
+			for (int counter = 1; counter <= 50; counter++)
+			{
+
+				progressTextBlock.Text += "ᚙ ";
+				await System.Threading.Tasks.Task.Delay(20);
+
+			}
 		}
 
-		private void SimpleButton_Click(object sender, RoutedEventArgs e)
+		private void FunctionButton_Click(object sender, RoutedEventArgs e)
 		{
-			string computerName;
-			computerName = "Webserver14";
-			var outputText = "The current computer name is " + computerName;
-			outputTextblock.Text = outputText;
+			int ticketCount;
+			ticketCount = TicketGenerator.GetTicketCount();
+			ticketCount = TicketGenerator.GetTicketCount(eventName: "Portland Bike Tour");
+			ticketCount = 0;
+
+			ticketCount = TicketGenerator.GetTicketCount(isLocal: true);
+
 		}
-
-		private void BreakButton_Click(object sender, RoutedEventArgs e)
+		private void AnotherFunctionButton_Click(object sender, RoutedEventArgs e)
 		{
-
-
-			double x;
-			x = 6;
-			double y = 7;
-			// breakpoints cannot be set on comments
-			// or other non-runnable lines
-			string result;
-			double fraction = x / 5;
-			result = String.Format("Your answer is {0}", fraction);
-			outputTextblock.Text = result;
+			int ticketCount;
+			ticketCount = TicketGenerator.GetTicketCount(eventName: "Portland Bike Tour");
 		}
 	}
 }
