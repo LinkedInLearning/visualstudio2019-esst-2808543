@@ -24,7 +24,7 @@ namespace DebugWpf
 		{
 			InitializeComponent();
 		}
-		private void dataTipsButton_Click(object sender, RoutedEventArgs e)
+		private void DemoButton_Click(object sender, RoutedEventArgs e)
 		{
 			ExampleMethod();
 
@@ -45,7 +45,7 @@ namespace DebugWpf
 
 
 			// types with more properties
-			var tour = new Tour { TourName = "City bikes", Location = "Portland" };
+			var tour = new Book { Title = "XML vs. JSON, the modern data dilemma", Price = 65.75M };
 			var birthDate = DateTime.Parse("5/5/1992");
 
 
@@ -57,18 +57,31 @@ namespace DebugWpf
 			sortedNames.Add("Martin", 55);
 			sortedNames.Add("Ralph", 28);
 
+			WorkWithXmlData("BookList.xml", true);
 			#region Message
+			
 			messageTextBlock.Text = sentence;
+			// look at the "return" value in the locals window.
 			messageTextBlock.Text = taxRate.ToString();
-
+			messageTextBlock.Text = GetBookName();
 			#endregion
 		}
+		private void WorkWithXmlData(string xmlFileName, bool useSchema)
+		{
+			// the locals and Autos window will show
+			// variables from this method
 
+			var doc = System.Xml.Linq.XDocument.Load(xmlFileName);
+			string text = doc.ToString();
+		}
+		private string GetBookName() {
+			return "Top ten tips for .NET strings.";
+		}
 	}
 
-	public class Tour
+	public class Book
 	{
-		public string TourName { get; set; }
-		public string Location { get; set; }
+		public string Title { get; set; }
+		public decimal Price { get; set; }
 	}
 }

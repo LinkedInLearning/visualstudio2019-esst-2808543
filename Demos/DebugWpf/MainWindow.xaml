@@ -9,14 +9,14 @@
 				Width="525"
 				FontSize='18'>
 	<StackPanel>
-		<Button Content='DataTips'
+		<Button Content='Watch, Local, Autos Windows'
 						Height='36'
 						HorizontalAlignment='Center'
 						Margin='20'
-						Name='dataTipsButton'
+						Name='DemoButton'
 						VerticalAlignment='Top'
-						Width='152'
-						Click='dataTipsButton_Click' />
+						Width='Auto'
+						Click='DemoButton_Click' />
 		<TextBlock Margin='20'
 							 x:Name='messageTextBlock' />
 	</StackPanel>
