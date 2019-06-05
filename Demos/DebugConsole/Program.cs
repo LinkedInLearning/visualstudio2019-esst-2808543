@@ -10,10 +10,10 @@ namespace DebugConsole
 
 			string description = "Errors in strings are alos discovered.  ";
 
-			// what about variable names?
-
+			// variable names and other code members are not
+			// spell checked
 			var demonstrtion = 4;
-
+		  
 			Console.WriteLine(description);
 			Console.WriteLine(demonstrtion);
 		}
