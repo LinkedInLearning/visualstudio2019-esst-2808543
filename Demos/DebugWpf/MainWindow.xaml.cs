@@ -38,7 +38,7 @@ namespace DebugWpf
 			// step over
 			monthlyPayment = Financial.CalculateMonthlyPayment(numberOfMonths: 24,
 																									 loanRate: rate,
-																									 loanAmount: 2365);
+																									 loanAmount: 2800);
 
 
 			// step out;
