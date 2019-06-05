@@ -45,7 +45,7 @@ namespace DebugWpf
 
 
 			// types with more properties
-			var tour = new Book { Title = "XML vs. JSON, the modern data dilemma", Price = 65.75M };
+			var book = new Book { Title = "XML vs. JSON, the modern data dilemma", Price = 65.75M };
 			var birthDate = DateTime.Parse("5/5/1992");
 
 
