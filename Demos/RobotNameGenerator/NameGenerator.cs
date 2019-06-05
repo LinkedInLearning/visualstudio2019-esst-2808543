@@ -13,7 +13,7 @@ namespace RobotNameGenerator
         private List<string> _primeNames;
 
         private List<string> _tagNames;
-        private string[] _initials = new string[] { "A.", "B.", "C." };
+        
 
         private Random _ran = new Random();
 
