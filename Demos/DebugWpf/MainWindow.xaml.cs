@@ -25,7 +25,7 @@ namespace DebugWpf
 			InitializeComponent();
 		}
 
-		private void steppingButton_Click(object sender, RoutedEventArgs e)
+		private void SteppingButton_Click(object sender, RoutedEventArgs e)
 		{
 			decimal monthlyPayment;
 			decimal rate = 5.6M;

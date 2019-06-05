@@ -8,16 +8,16 @@
 				Title="MainWindow"
 				Width="525"
 				FontSize='18'>
-	<StackPanel Margin='20'
+	<StackPanel Margin='20,50'
 							HorizontalAlignment='Center'
 							Width='400'>
 		<Button Content='Stepping Through Code'
 						Height='36'
 						HorizontalAlignment='Center'
-						Name='steppingButton'
+						Name='SteppingButton'
 						VerticalAlignment='Top'
 						Width='auto'
-						Click='steppingButton_Click' />
+						Click='SteppingButton_Click' />
 		<TextBlock x:Name='outputTextblock'
 							 HorizontalAlignment='Center' />
 	</StackPanel>
