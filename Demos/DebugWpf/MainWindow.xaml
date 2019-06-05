@@ -12,6 +12,8 @@
 							HorizontalAlignment='Stretch'>
 		<Button Content='Start Demo'
 						Click='Button_Click' />
+		<Button Content='Clear data'
+						Click='ClearButton_Click' />
 		<Grid>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width='58*' />

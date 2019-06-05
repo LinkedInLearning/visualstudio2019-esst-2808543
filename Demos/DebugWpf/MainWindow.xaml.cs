@@ -26,5 +26,11 @@ namespace DebugWpf
 			SlowListBox.ItemsSource = slowNames;
 			SlowProgressBar.IsIndeterminate = false;
 		}
+
+		private void ClearButton_Click(object sender, RoutedEventArgs e)
+		{
+			FastListBox.ItemsSource = null;
+			SlowListBox.ItemsSource = null;
+		}
 	}
 }
