@@ -5,4 +5,17 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Stylesheet1.css" />
+    <None Remove="XMLFile1.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Stylesheet1.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="XMLFile1.xml" />
+  </ItemGroup>
+
 </Project>
