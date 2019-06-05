@@ -1,17 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace DebugWpf
 {
@@ -45,7 +34,7 @@ namespace DebugWpf
 
 
 			// types with more properties
-			var tour = new Tour { TourName = "City bikes", Location = "Portland" };
+			var book = new Book { Title = "How to build better Lambdas ", Price = "12.50M" };
 			var birthDate = DateTime.Parse("5/5/1992");
 
 
@@ -66,9 +55,9 @@ namespace DebugWpf
 
 	}
 
-	public class Tour
+	public class Book
 	{
-		public string TourName { get; set; }
-		public string Location { get; set; }
+		public string Title { get; set; }
+		public string Price { get; set; }
 	}
 }
