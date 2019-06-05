@@ -1,3 +1,0 @@
-tour {DataTipsAndDataVisualizers.Tour}
-tour.Location "Portland"
-tour.Location
