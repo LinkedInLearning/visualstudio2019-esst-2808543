@@ -8,7 +8,7 @@
 				Title="MainWindow"
 				Width="525"
 				FontSize='18'>
-	<StackPanel Margin='20'
+	<StackPanel Margin='20,50' 
 							HorizontalAlignment='Center'
 							Width='400'>
 		<Button Content='Simple Breakpoint'
