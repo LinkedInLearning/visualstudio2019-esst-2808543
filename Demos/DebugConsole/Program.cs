@@ -6,9 +6,9 @@ namespace DebugConsole
 	{
 		static void Main(string[] args)
 		{
-			// Spelling errrs in comments are flaged
+			// Spelling errs in comments are flagged
 
-			string description = "Errors in strings are alos discovered.  ";
+			string description = "Errors in strings are also discovered.  ";
 
 			// variable names and other code members are not
 			// spell checked
