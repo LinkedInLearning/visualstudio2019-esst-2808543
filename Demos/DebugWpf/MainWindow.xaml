@@ -8,7 +8,7 @@
 				Title="MainWindow"
 				Width="800"
 				FontSize='14'>
-	<TabControl>
+	<TabControl Margin="0,50">
 		<TabItem Header='Conditional'>
 			<Grid>
 				<Grid.ColumnDefinitions>
