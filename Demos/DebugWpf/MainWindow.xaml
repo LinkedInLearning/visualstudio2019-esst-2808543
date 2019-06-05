@@ -8,7 +8,7 @@
 				Title="MainWindow"
 				Width="525"
 				FontSize='18'>
-	<StackPanel>
+	<StackPanel Margin=" 20,50">
 		<Button Content='Watch, Local, Autos Windows'
 						Height='36'
 						HorizontalAlignment='Center'
