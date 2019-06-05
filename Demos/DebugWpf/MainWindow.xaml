@@ -8,7 +8,7 @@
 				Title="MainWindow"
 				Width="700"
 				FontSize='14'>
-	<StackPanel Margin='80,20'
+	<StackPanel Margin='80,50'
 							HorizontalAlignment='Stretch'>
 		<Button Content='Start Demo'
 						Click='Button_Click' />
