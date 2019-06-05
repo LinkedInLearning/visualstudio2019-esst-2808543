@@ -27,24 +27,21 @@ namespace DebugWpf
 		private void GetNameButton_Click(object sender, RoutedEventArgs e)
 		{
 			var gen = new RobotNameGenerator.NameGenerator();
-			var roboName = gen.GetRobotName();
+			var robotName = gen.GetRobotName();
 
-			outputTextblock.Text = roboName;
+			outputTextblock.Text = robotName;
 		}
 
-		public const int NAME_COUNT = 8;
+		public const int NAME_COUNT = 9;
 
 		private void AllNamesButton_Click(object sender, RoutedEventArgs e)
 		{
 			var gen = new RobotNameGenerator.NameGenerator();
-			var allNames = gen.GetRobotNames(16);
+			var allNames = gen.GetRobotNames(NAME_COUNT);
 
 			AllNamesListBox.ItemsSource = allNames;
 
-			//foreach (var item in allNames)
-			//{
-			//	AllNamesListBox.Items.Add(item);
-			//}
+			
 		}
 	}
 }
