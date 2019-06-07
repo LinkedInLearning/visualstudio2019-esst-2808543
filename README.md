@@ -13,7 +13,7 @@ To use these exercise files [install Visual Studio](https://visualstudio.microso
 
 ## About our Visual Studio courses
 This is a refreshed version of our Visual Studio Essential series. 
-To discover additional content not covered in this course please enjoy our other LinkedIn Learning**** Visual Studio courses.
+To discover additional content not covered in this course please enjoy our other **LinkedIn Learning** Visual Studio courses.
 1. [Visual Studio Tips](https://www.linkedin.com/learning/visual-studio-developer-tips/open-the-solution-from-team-explorer)
 2. [Visual Studio Tips for Web Developers
 ](https://www.linkedin.com/learning/visual-studio-tips-for-web-developers/view-svg-files-in-the-ide)
