@@ -7,7 +7,7 @@ All the examples for this course are available to you as exercise files. The exe
 ## Branches
 
 The branches are structured to correspond to the videos in the course. The naming convention is `chapter#-video#`. As an example, the branch named `02-03` corresponds to the second chapter and the third video in that chapter.
-Some branches will have a beginning state (`04-01`) and an end state (`04-01e`). The end state videos use `e` for "end" and contains the code as it is at the end of the movie. The `master` branch holds the the initial state of the course and is not used during the course.
+Some branches will have a beginning state (`04-01`) and an end state (`04-01e`). The end state videos use `e` for "end" and contains the code as it is at the end of the video. The `master` branch holds the the initial state of the course and is not used for exercises during the course.
 ## Installing
 To use these exercise files [install Visual Studio](https://visualstudio.microsoft.com/). For this course any edition is sufficient (Community, Professional, Enterprise)
 
