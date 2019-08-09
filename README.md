@@ -2,6 +2,11 @@
 
 This is the repository for the **LinkedIn Learning**  [Visual Studio Essential Training](#) course. The full course is available from [LinkedIn Learning](https://linkedin.com/learning).
 
+## About this course
+> _Learn the essentials of Visual Studio, the integrated development environment from Microsoft. Unlock the power of Visual Studio tools for writing, refactoring, and debugging code._
+
+Integrated development environments (IDE) make it faster and easier to write high-quality code. Visual Studio, the IDE from Microsoft, has every tool you need to be a productive developer—regardless of your language, programming style, or project type. This course offers a comprehensive introduction to Visual Studio, allowing you to explore the tools and features and configure Visual Studio to support your needs. Instructor Walt Ritscher shows how to implement version control with Git, adjust the editor preferences, code more efficiently with IntelliSense and code snippets, and use the built-in tools in Visual Studio for refactoring and debugging code. Plus, learn how to make Visual Studio even more robust by capitalizing on the library of free and paid extensions in the Visual Studio Marketplace.
+
 ## Zip Files
 All the examples for this course are available to you as exercise files. The exercises for the *first half* of the course can be downloaded from the course page.  If you are signed in to your account, you can download the zip file. In the *second half* of the course the remainder of the exercise files are available from this LinkedIn Learning  repository
 ## Branches
@@ -31,5 +36,5 @@ To discover additional content not covered in this course please enjoy our other
 ## About the Instructor - Walt Ritscher
 Check out my [other courses](https://www.linkedin.com/learning/instructors/walt-ritscher) on LinkedIn Learning.  Follow me on [LinkedIn](https://www.linkedin.com/in/waltritscher/?trk=lil_course) and [Twitter](https://twitter.com/waltritscher). 
 
-![Walt Ritscher Headshot](https://media.licdn.com/dms/image/C4D03AQE8tjxoESjxoQ/profile-displayphoto-shrink_200_200/0?e=1565222400&v=beta&t=oAmWUfn9yWtXZdxPtUdvXvycgCNhNpN6IpsFrYo6mTo)
+![Walt Ritscher Headshot](https://media.licdn.com/dms/image/C4D03AQE8tjxoESjxoQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=DvJhngxaoBLRxWjJKcuduzOdfen77TJX_EZggAQIWfY)
 
