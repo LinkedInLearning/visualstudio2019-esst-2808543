@@ -7,6 +7,23 @@ This is the repository for the **LinkedIn Learning**  [Visual Studio Essential T
 
 Integrated development environments (IDE) make it faster and easier to write high-quality code. Visual Studio, the IDE from Microsoft, has every tool you need to be a productive developer—regardless of your language, programming style, or project type. This course offers a comprehensive introduction to Visual Studio, allowing you to explore the tools and features and configure Visual Studio to support your needs. Instructor Walt Ritscher shows how to implement version control with Git, adjust the editor preferences, code more efficiently with IntelliSense and code snippets, and use the built-in tools in Visual Studio for refactoring and debugging code. Plus, learn how to make Visual Studio even more robust by capitalizing on the library of free and paid extensions in the Visual Studio Marketplace.
 
+**Topics include:*
+*	Installing and configuring Visual Studio
+* Working with files and projects
+* Adding a project to Git
+* Using checkout to open files from Git
+* Configuring editor settings
+* Writing code in the editor
+* Using IntelliSense and snippets
+* Change tracking code
+* Refactoring
+* Formatting code
+* Exploring classes
+* Finding references
+* Debugging code
+* Adding Visual Studio extensions
+
+
 ## Zip Files
 All the examples for this course are available to you as exercise files. The exercises for the *first half* of the course can be downloaded from the course page.  If you are signed in to your account, you can download the zip file. In the *second half* of the course the remainder of the exercise files are available from this LinkedIn Learning  repository
 ## Branches
