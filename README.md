@@ -1,6 +1,6 @@
 # Visual Studio Essential Training (2019 Revision)
 
-This is the repository for the **LinkedIn Learning**  [Visual Studio Essential Training](#) course. The full course is available from [LinkedIn Learning](https://linkedin.com/learning).
+This is the repository for the **LinkedIn Learning**  [Visual Studio Essential Training](https://www.linkedin.com/learning/visual-studio-2019-essential-training/working-with-source-control-in-visual-studio) course. The full course is available from [LinkedIn Learning](https://linkedin.com/learning).
 
 ## About this course
 > _Learn the essentials of Visual Studio, the integrated development environment from Microsoft. Unlock the power of Visual Studio tools for writing, refactoring, and debugging code._
@@ -53,5 +53,6 @@ To discover additional content not covered in this course please enjoy our other
 ## About the Instructor - Walt Ritscher
 Check out my [other courses](https://www.linkedin.com/learning/instructors/walt-ritscher) on LinkedIn Learning.  Follow me on [LinkedIn](https://www.linkedin.com/in/waltritscher/?trk=lil_course) and [Twitter](https://twitter.com/waltritscher). 
 
-![Walt Ritscher Headshot](https://media.licdn.com/dms/image/C4D03AQE8tjxoESjxoQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=DvJhngxaoBLRxWjJKcuduzOdfen77TJX_EZggAQIWfY)
+
+![Walt Ritscher Headshot](https://38ydkq.dm.files.1drv.com/y4moADNYVNnmGDQCVwkufdGJmbpNZ-ym19j09TtRSOJpMSRFbMVFrRsM7DNZ5DRAY6tb1zsk_Df8ESybhbWypqCa8DXTuGbo4oAYE36t27l2LRgiGL42VVKEksULNm076nZQRfaL_Ew2cDw0V8IwcoztB46_RSn6biJd33elOHTDlDC6jy5kdTc7P8HW_F6TdSb?width=461&height=461&cropmode=none)
 
