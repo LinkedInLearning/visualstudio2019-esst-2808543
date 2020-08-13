@@ -1,6 +1,6 @@
 # Visual Studio Essential Training (2019 Revision)
 
-This is the repository for the **LinkedIn Learning**  [Visual Studio Essential Training](https://www.linkedin.com/learning/visual-studio-2019-essential-training/working-with-source-control-in-visual-studio) course. The full course is available from [LinkedIn Learning](https://linkedin.com/learning).
+This is the repository for the **LinkedIn Learning**  [Visual Studio Essential Training](https://www.linkedin.com/learning/visual-studio-2019-essential-training/visual-studio-overview-for-beginners) course. The full course is available from [LinkedIn Learning](https://linkedin.com/learning).
 
 ## About this course
 > _Learn the essentials of Visual Studio, the integrated development environment from Microsoft. Unlock the power of Visual Studio tools for writing, refactoring, and debugging code._
